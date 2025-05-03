@@ -1,4 +1,5 @@
 https://www.cyberciti.biz/faq/update-lenovo-bios-from-linux-usb-stick-pen/
+https://www.cyberciti.biz/faq/update-lenovo-bios-from-linux-usb-stick-pen/
 
 The procedure discussed here is for an older model of Lenovo ThinkPad and other models. These days latest models of ThinkPads support direct BIOS/Firmware updates using Linux CLI and GUI. See this guide about those options.
 
