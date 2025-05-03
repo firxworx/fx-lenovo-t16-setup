@@ -1,15 +1,5 @@
 
-# enable firewall
-sudo ufw enable
-
-# consider default deny policies...
-# sudo ufw default deny incoming
-# sudo ufw default deny outgoing 
-# sudo ufw allow ssh
-# sudo ufw allow 3000
-# sudo ufw allow ...
-
-# consider gufw app (apt) for gnome gui
+# @see security-firewall.sh
 
 # auto updates
 sudo dpkg-reconfigure --priority=low unattended-upgrades
@@ -19,6 +9,7 @@ sudo systemctl list-unit-files --state=enabled
 # sudo systemctl disable <service_name>
 
 # consider disk encryption 
+# set password on opal in bios
 
 # dev only user
 # sudo adduser dex
