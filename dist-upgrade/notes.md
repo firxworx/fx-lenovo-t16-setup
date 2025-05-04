@@ -61,3 +61,35 @@ battery drain no s3 sleep
 SEE T14 Gen 5 hacks MANY APPLICABLE
 GREAT COMMENT
 
+going into it running this kernel
+6.5.0-1016-oem
+
+old and different machine but covers bios considerations
+https://download.lenovo.com/pccbbs/mobiles_pdf/thinkpad_p15_gen2_p17_gen2_p1_gen4_ubuntu_20.04_lts_installation_v1.0.pdf
+
+https://discourse.ubuntu.com/t/lenovo-thinkpad-p16-gen2-laptop-wont-accept-24-04/53972/30
+THIS IS THE ONE WITH THE "REP"
+
+> Call back Lenovo tech support. Bully my way through two or three phone calls until finding the support rep who tried to reach me a couple of days ago without a callback number, leaving only an email from “Ahmed”. After much persistence got a return call from Ahmed.
+
+first will run as root:
+
+```
+sed -i 's/Prompt=[^ ]*/Prompt=lts/' /etc/update-manager/release-upgrades
+```
+
+
+sudo apt update
+sudo apt upgrade
+sudo apt install update-manager-core <-- didn't do initially
+reboot
+sudo apt dist-upgrade <-- didn't do initially
+
+
+```
+sudo do-release-upgrade
+```
+
+https://askubuntu.com/questions/1412543/how-does-exactly-do-release-upgrade-d-work careful the `-d` flag means dev release
+
+https://discourse.ubuntu.com/t/which-nvidia-driver-on-newly-upgraded-lenovo-laptop/54221
